@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<facelet-taglib version="2.2"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facelettaglibrary_2_2.xsd">
+	<namespace>http://www.smeup.com</namespace>
+	<tag>
+		<tag-name>word-count</tag-name>
+		<component>
+			<component-type>WordCount</component-type>
+			<renderer-type>WordCount</renderer-type>
+		</component>
+	</tag>
+	<tag>
+		<tag-name>smeup-table</tag-name>
+		<component>
+			<component-type>SmeupTable</component-type>
+			<renderer-type>SmeupTable</renderer-type>
+		</component>
+		<attribute>
+			<name>value</name>
+		</attribute>
+	</tag>
+</facelet-taglib>
