@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:smeup="http://www.smeup.com"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+	<meta charset="utf-8"></meta>
+	<title>Web components demo</title>
+</h:head>
+<body>
+	<h:form>
+		<h:inputText></h:inputText>
+		<h:commandButton value="Welcome Me">
+			<f:ajax render="@this" />
+		</h:commandButton>
+	</h:form>
+
+
+	<smeup:word-count></smeup:word-count>
+
+
+	<p>
+		a b c d e f
+
+		<smeup:word-count></smeup:word-count>
+	</p>
+	<hr />
+	<smeup:smeup-table value="#{tableData.content3}"></smeup:smeup-table>
+	<hr />
+	<h:form>
+	<smeup:smeup-table value="#{tableData.content4}">
+		<f:ajax event="cellClicked" listener="#{tableData.onCellClicked}" render="@none"/>
+	</smeup:smeup-table>
+	</h:form>
+
+</body>
+</html>
