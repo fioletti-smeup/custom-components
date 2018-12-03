@@ -42,6 +42,8 @@ class SmeupTable extends HTMLElement {
 	    	shadow.appendChild(tr);
 		    
 	    	});
+	    const wordcount = document.createElement('table');
+	    shadow.appendChild(wordcount);
   }
 }
 
